@@ -1,0 +1,111 @@
+/*Seccion Header*/
+
+.header {
+    background-image: url(../img/bg-portada.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img-logo {
+    width: 160px;
+}
+
+.linear-white::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.vh-50 {
+    height: 50vmin;
+}
+
+
+/*Seccion img*/
+
+.card-img-filter {
+    filter: brightness(0.5);
+}
+
+.card {
+    transition-duration: 0.6s;
+    clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0 50%, 0 0%);
+}
+
+.card-effect:hover .card {
+    clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+}
+
+.card-img-overlay {
+    transition-duration: 1.6s;
+}
+
+.card-effect:hover .card-img-overlay {
+    transform: scale(0.9);
+}
+
+
+/*Comentarios*/
+
+.coments.linear-white::after {
+    top: 0;
+}
+
+.coments {
+    background-image: url(../img/bg-clients.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.commets_img {
+    --tamano: 80px;
+    width: var(--tamano);
+    height: var(--tamano);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgb(0 0 0 / 0.5);
+    border: 3px ridge #fff;
+}
+
+.tranform-turn {
+    transform: rotate(0.5turn);
+}
+
+
+/*Media*/
+
+.media-obeject-img {
+    --tamano: 100px;
+    width: var(--tamano);
+    height: var(--tamano);
+    margin-right: 15px;
+}
+
+
+/*Carrousel*/
+
+.carousel-weston-middle {
+    top: 35%;
+}
+
+
+/*Media query*/
+
+@media screen and (max-width:375px) {
+    .vh-50 {
+        height: 50vmax;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .vh-50 {
+        height: 55vmax;
+    }
+}
